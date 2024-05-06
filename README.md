@@ -49,6 +49,10 @@ Then install axios library that handles http requests via the command
 
     npm install axios
 
+To run the application, write this command 
+
+    npm run dev
+
      
 
      
