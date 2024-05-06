@@ -3,7 +3,7 @@
 
 .main
 {
-    background:url(../../Assets/to-do-app/Images/pexels-photo-1166644.webp); 
+    background:url(../Images/pexels-photo-1166644.webp); 
     min-height: 700px;
     color:black
 }
@@ -17,7 +17,7 @@
 }
 .fieldset
 {
-  background:url(../../Assets/to-do-app/Images/pexels-photo-82256.webp);
+  background:url(../Images/pexels-photo-82256.webp);
   min-width: 500px;
   border: 10px solid #888;
   border-right: 10px solid #666;
@@ -85,7 +85,7 @@
 
 .div {
   
-  background:url(../../Assets/to-do-app/Images/dse-large.jpg);
+  background:url(../Images/dse-large.jpg);
   position:relative;
   border: 5px solid rgba(0, 0, 0, 0.959);
   padding: 40px;

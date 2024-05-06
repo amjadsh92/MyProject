@@ -49,11 +49,11 @@ export default function Tic() {
       .delete(url + `/${index}`)
       .then((response) => {
         console.log("This user has been deleted", response.data);
-        
+        setHits(hits.filter((hit) => hits.indexOf(hit) <= index));
         showMoves(index);
       })
       .catch((error) => {
-        setError(error);
+        setError(error.response.data);
       })
       .finally(() => {
         setLoading(false);
@@ -108,14 +108,14 @@ function History({ hits, moves }) {
       {hits.map((hit, index) => {
         if (index == 0) {
           return (
-            <button key={hit} onClick={() => moves("../api/xo",index+1)}>
+            <button key={hit} onClick={() => moves("../api/xo",index)}>
               reset
             </button>
           );
         } else {
           console.log("hitshistory=", hits)
           return (
-            <button key={hit} onClick={() => moves("../api/xo",index+1)}>
+            <button key={hit} onClick={() => moves("../api/xo",index)}>
               go to move {index}
             </button>
           );
@@ -165,6 +165,7 @@ function RenderTable({ hit, handleClick, clickDisabled }) {
   return (
     <>
       <table className={Styles.table}>
+        <tbody>
         <tr>
           <td
             className={Styles.td}
@@ -227,6 +228,8 @@ function RenderTable({ hit, handleClick, clickDisabled }) {
             {hit[8]}
           </td>
         </tr>
+        </tbody>
+        
       </table>
     </>
   );

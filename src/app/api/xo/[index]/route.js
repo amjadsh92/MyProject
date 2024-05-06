@@ -15,9 +15,9 @@ export async function DELETE(request, { params }) {
   
 
   
-  const deleteHit = await prisma.hit.delete({
+  const deleteHit = await prisma.hit.deleteMany({
     where: {
-      id: 31,
+      index: {gt: parseInt(index)}
     },
   });
   
