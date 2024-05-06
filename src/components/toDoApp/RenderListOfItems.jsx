@@ -1,24 +1,11 @@
 import { useSelector, useDispatch } from "react-redux";
-import { deleteTasks, showTask } from "@/lib/features/toDoApp/toDoAppSlice";
 import Styles from "@/Assets/to-do-app/Styles/to-do-app.module.css"
+import { deleteTasks } from "@/lib/features/toDoApp/toDoAppSlice";
+import { showTask } from "@/lib/features/toDoApp/toDoAppSlice";
 
 
-export default function TodoOverviewList() {
-    const tasks = useSelector((state) => state.toDo.tasks);
-  
-    return (
-      <>
-        <fieldset className={Styles.fieldset}>
-          <legend className={Styles.legend}> To-do-items</legend>
-          {tasks.map((task) => (
-            <RenderOverviewList task={task} key={task.id} />
-          ))}
-        </fieldset>
-      </>
-    );
-  }
-  
-  function RenderOverviewList({ task }) {
+
+export default function RenderListOfItems({ task }) {
     const dispatch = useDispatch();
     return (
       <>
