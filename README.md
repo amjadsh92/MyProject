@@ -10,10 +10,10 @@ I am kind of learning the basics of web-development by myself. It is not enough 
 
 The project has two main pages:
 
-1-The To-Do-List page
-2-Tic-Tac-Toe page
+1-The To-Do-List page <br>
+2-Tic-Tac-Toe page <br>
 
-We used the App Router feautre.
+I used Nextjs 14 to build the application with utilizing the App Router feature.
 
 ### 1- To-Do-List page:
 
