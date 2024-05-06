@@ -23,7 +23,7 @@ We used the App Router feautre.
 - The show button will let me see the details of the task, like the id, name, and the description in the Details container.
 - For the back-end I used Prisma ORM to manage the database queries. For this page the database used is crud_api and the name of the table is Task.
 - I managed the state of the application by using Redux library, so we have a central cenralized place for the global state, which is the store, that all the components of the app can see and would update whenever the state changes.
-- You can find the source code for this page in src/app/to-do-app/page.jsx
+- You can find the source code for this page in src/app/toDoApp/page.jsx
 
 ### 2- Tic-Tac-Toe page:
 
@@ -31,7 +31,7 @@ We used the App Router feautre.
 - You can reset the game and also return to previous plays.
 - For the back-end I used Prisma ORM to manage the database queries. For this page the database used is crud_api and the name of the table is Hit.
 - For this page instead of using Redux I passed down regular React props.
-- You can find the source code for this page in src/app/tic-tac-toe/page.jsx
+- You can find the source code for this page in src/app/TicTacToe/page.jsx
 
 
 ## Installation and dependencies
@@ -48,6 +48,8 @@ Then install Prisma ORM tool via this command
 Then install axios library that handles http requests via the command 
 
     npm install axios
+
+    
 
 To run the application, write this command 
 
