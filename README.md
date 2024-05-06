@@ -34,24 +34,14 @@ I used Nextjs 14 to build the application with utilizing the App Router feature.
 - You can find the source code for this page in src/app/TicTacToe/page.jsx
 
 
-## Installation and dependencies
+## Installation
 
 
 Before running the project you should first write this command to install the required dependencies:
 
         npm i 
 
-Then install Prisma ORM tool via this command 
-
-     npm install prisma --save-dev
-
-Then install axios library that handles http requests via the command 
-
-    npm install axios
-
-    
-
-To run the application, write this command 
+To run the project, write this command 
 
     npm run dev
 
