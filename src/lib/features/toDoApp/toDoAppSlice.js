@@ -6,30 +6,24 @@ const initialState = {
   tasks: [],
   status: "idle",
   error: null,
-  taskToShow:null,
-  
+  taskToShow: null,
 };
 
 const toDoAppSlice = createSlice({
   name: "toDo",
   initialState,
   reducers: {
-    showTask:(state,action) => {
+    showTask: (state, action) => {
       state.tasks.map((task) => {
-        if(task.id === action.payload){
-          state.taskToShow = task
+        if (task.id === action.payload) {
+          state.taskToShow = task;
         }
-      })
-
+      });
     },
 
-    hideTask:(state, action) => {
+    hideTask: (state, action) => {
       state.taskToShow = null;
-
-
-    }
-
-
+    },
   },
 
   extraReducers(builder) {
@@ -41,7 +35,7 @@ const toDoAppSlice = createSlice({
       .addCase(fetchTasks.fulfilled, (state, action) => {
         state.status = "succeeded";
         state.tasks = action.payload;
-        console.log('tasks are', action.payload);
+        console.log("tasks are", action.payload);
       })
       .addCase(fetchTasks.rejected, (state, action) => {
         state.status = "failed";
@@ -66,20 +60,17 @@ const toDoAppSlice = createSlice({
       })
       .addCase(deleteTasks.fulfilled, (state, action) => {
         state.status = "succeeded";
-        if (state.taskToShow !== null){
-          if(action.payload.id === state.taskToShow.id){
+        if (state.taskToShow !== null) {
+          if (action.payload.id === state.taskToShow.id) {
             state.taskToShow = null;
           }
         }
 
-        // Add any fetched posts to the array
-        //state.products.filter((product) => product.id !== action.payload)
-        const index = state.tasks.findIndex((task) => task.id === action.payload.id ) ;
-
-        state.tasks.splice(
-          index,
-          1
+        const index = state.tasks.findIndex(
+          (task) => task.id === action.payload.id
         );
+
+        state.tasks.splice(index, 1);
         console.log("the problem", action.payload.id);
       })
       .addCase(deleteTasks.rejected, (state, action) => {
@@ -117,9 +108,7 @@ export const deleteTasks = createAsyncThunk(
   "toDo/deleteTasks",
   async (idOfTaskToDelete, thunkAPI) => {
     try {
-      const res = await axios.delete(
-        "../api/toDoApp" + `/${idOfTaskToDelete}`
-      );
+      const res = await axios.delete("../api/toDoApp" + `/${idOfTaskToDelete}`);
       return res.data;
     } catch (err) {
       return thunkAPI.rejectWithValue({ error: err.message });
@@ -127,11 +116,6 @@ export const deleteTasks = createAsyncThunk(
   }
 );
 
-//export const selectAllProducts = (state) => state.prod.products;
-
-//export const selectProductById = (state, productId) =>
-  //state.prod.products.find((product) => product.id === productId);
-
-export const {showTask, hideTask} = toDoAppSlice.actions
+export const { showTask, hideTask } = toDoAppSlice.actions;
 
 export const tasksReducer = toDoAppSlice.reducer;

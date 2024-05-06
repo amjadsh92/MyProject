@@ -14,9 +14,9 @@ const links = [
     {title:"Homepage",
         path:"/"},
     {title:"to-do-app",
-    path:"/To-do-app"},
+    path:"/toDoApp"},
     {title:"tic-tac-toe",
-    path:"/tic-tac-toe"},
+    path:"/TicTacToe"},
     
 
     
