@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/toDoApp/page": "app/toDoApp/page.js",
+  "/api/toDoApp/route": "app/api/toDoApp/route.js",
+  "/TicTacToe/page": "app/TicTacToe/page.js",
+  "/api/TicTacToe/route": "app/api/TicTacToe/route.js",
+  "/api/TicTacToe/[index]/route": "app/api/TicTacToe/[index]/route.js",
+  "/api/toDoApp/[id]/route": "app/api/toDoApp/[id]/route.js"
+}

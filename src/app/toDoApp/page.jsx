@@ -17,13 +17,12 @@ export default function TodoApp() {
     }
   }, [taskStatus, dispatch]);
 
-
   return (
     <div className={Styles.main}>
       <h2 className={Styles.title}>Welcome to To-do-list application!</h2>
       <SubmitItem dispatch={dispatch} />
-      <ListOfItems dispatch={dispatch}/>
-      <ItemDetails dispatch={dispatch}/>
+      <ListOfItems dispatch={dispatch} />
+      <ItemDetails dispatch={dispatch} />
     </div>
   );
 }

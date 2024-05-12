@@ -1,0 +1,132 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Assets/to-do-app/Styles/to-do-app.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+
+.to-do-app_main__1sQVB
+{
+    background:url(/_next/static/media/pexels-photo-1166644.905e524c.webp); 
+    min-height: 700px;
+    color:black
+}
+
+.to-do-app_title__SNJB9{
+
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+}
+.to-do-app_fieldset__Q_hnk
+{
+  background:url(/_next/static/media/pexels-photo-82256.36a0987b.webp);
+  min-width: 500px;
+  border: 10px solid #888;
+  border-right: 10px solid #666;
+  border-bottom: 10px solid #666;
+  max-width:500px;
+  padding:16px;	
+  margin-top: 20px;
+  margin-bottom:20px;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.to-do-app_button__8Njse {
+    background-color: grey;
+    border: 1px;
+    border-radius:15px;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: auto;
+    margin-bottom:2px;
+    margin-left:2px;
+    margin-right:2px;
+    cursor: pointer;
+  }
+
+  .to-do-app_label__miAN5 {
+    color: #0a0a23;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+      
+  }
+
+  .to-do-app_legend__SOtgW{
+    background-color: grey;
+    border: 1px solid;
+    border-radius:10px;
+    font-family: "Fantasy";
+
+
+
+}
+
+.to-do-app_task__HMCPN {
+  background-color: AliceBlue; 
+  box-sizing: border-box;       
+  width: 380px;
+  height: 23px;
+  padding-top:3px;
+  padding-bottom:1px;
+  padding-left: 3px;
+  margin: 2px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold; 
+  font-size:small;
+  border:3px solid;
+  border-color: grey;
+  border-radius:50px;
+  color: black ;
+  
+}
+
+.to-do-app_div__suQFC {
+  
+  background:url(/_next/static/media/dse-large.2bee883a.jpg);
+  position:relative;
+  border: 5px solid rgba(0, 0, 0, 0.959);
+  padding: 40px;
+  margin: 10px;}
+
+.to-do-app_ul__KJsCi{
+  color: black;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+
+
+.to-do-app_div1__FPaJb {
+    display: flex;
+}
+
+.to-do-app_largeinput__11Qvt {
+
+  width: 350px;
+  
+  height: 100px;
+  
+  }
+
+.to-do-app_hide__Cz0F6 {
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  background-color: rgba(128, 128, 128, 0.625);
+  
+}
+  
+.to-do-app_button__8Njse:hover{
+
+  transform: scale(1.1)
+}
+
+.to-do-app_hide__Cz0F6:hover{
+
+  transform: scale(1.1)
+}

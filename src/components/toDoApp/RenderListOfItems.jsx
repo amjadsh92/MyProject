@@ -5,8 +5,8 @@ import { showTask } from "@/lib/features/toDoApp/toDoAppSlice";
 
 
 
-export default function RenderListOfItems({ task }) {
-    const dispatch = useDispatch();
+export default function RenderListOfItems({ task, dispatch }) {
+    
     return (
       <>
         <div className={Styles.div1}>

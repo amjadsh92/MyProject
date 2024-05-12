@@ -1,0 +1,42 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/Assets/TicTacToe/Styles/tic-tac-toe.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.tic-tac-toe_main__bcNMI
+{
+    background-color: white;
+    min-height: 700px;
+    color:black
+}
+
+.tic-tac-toe_table__oqwbh {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: 1px solid black;
+  
+    width: 100px;
+    max-width: 100px;
+    height: 50px;
+    max-height: 50px;
+  }
+  
+  .tic-tac-toe_td__KNPZ8{
+    text-align: center;
+    font-size: x-large;
+    height: 50px;
+    max-height: 50px;
+    width: 50px;
+    max-width: 50px;
+    border: 1px solid black;
+  }
+  
+
+  .tic-tac-toe_title__0n5lT{
+
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}

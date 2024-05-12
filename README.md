@@ -8,10 +8,13 @@ I am kind of learning the basics of web-development by myself. It is not enough 
 
 ## Project Description
 
-The project has two main pages:
+The project has four main pages:
+1-Homepage <br>
+2-The To-Do-List page <br>
+3-Tic-Tac-Toe page <br>
+4-Signin/SignUp page <br>
 
-1-The To-Do-List page <br>
-2-Tic-Tac-Toe page <br>
+If you are not signed-in, you will only have an access to the Signin/SignUp page. You can either sign-in with your GitHub accout or you can sign-up and then sign-in with your credentials. <br>
 
 I used Nextjs 14 to build the application with utilizing the App Router feature.
 
@@ -34,24 +37,20 @@ I used Nextjs 14 to build the application with utilizing the App Router feature.
 - You can find the source code for this page in src/app/TicTacToe/page.jsx
 
 
-## Installation and dependencies
+## Installation
 
 
-Before running the project you should first write this command to install the required dependencies:
+1- Before running the project you should first write this command to install the required dependencies:
 
         npm i 
 
-Then install Prisma ORM tool via this command 
+2- Configure MySQL connection in .env
 
-     npm install prisma --save-dev
+3- Run 
 
-Then install axios library that handles http requests via the command 
+    npx prisma migrate dev
 
-    npm install axios
-
-    
-
-To run the application, write this command 
+4- To run the project, write this command 
 
     npm run dev
 

@@ -4,8 +4,8 @@ import Styles from "@/Assets/TicTacToe/Styles/tic-tac-toe.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import React from "react";
-import Table from "@/components/tic-tac-toe/Table";
-import History from "@/components/tic-tac-toe/History";
+import Table from "@/components/TicTacToe/Table";
+import History from "@/components/TicTacToe/History";
 
 
 export default function Tic() {
