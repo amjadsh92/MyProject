@@ -43,7 +43,9 @@ I used Nextjs 14 to build the application with utilizing the App Router feature.
 
 2- Configure MySQL connection in .env
 
-3- Run npx prisma nigrate dev
+3- Run 
+
+    npx prisma nigrate dev
 
 4- To run the project, write this command 
 
