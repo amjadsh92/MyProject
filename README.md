@@ -37,11 +37,15 @@ I used Nextjs 14 to build the application with utilizing the App Router feature.
 ## Installation
 
 
-Before running the project you should first write this command to install the required dependencies:
+1- Before running the project you should first write this command to install the required dependencies:
 
         npm i 
 
-To run the project, write this command 
+2- Configure MySQL connection in .env
+
+3- Run npx prisma nigrate dev
+
+4- To run the project, write this command 
 
     npm run dev
 
