@@ -45,7 +45,7 @@ I used Nextjs 14 to build the application with utilizing the App Router feature.
 
 3- Run 
 
-    npx prisma nigrate dev
+    npx prisma migrate dev
 
 4- To run the project, write this command 
 
