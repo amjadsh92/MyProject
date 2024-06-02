@@ -4,8 +4,9 @@
 .main
 {
     background:url(../Images/pexels-photo-1166644.webp); 
-    min-height: 700px;
-    color:black
+    min-height: 720px;
+    color:black;
+    margin:0px
 }
 
 .title{

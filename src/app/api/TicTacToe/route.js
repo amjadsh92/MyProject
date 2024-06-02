@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 export async function POST(req) {
   const data = await req.json();
-  console.log('data', data)
+  console.log("data", data);
 
   const result = await prisma.hit.create({
     data: data,

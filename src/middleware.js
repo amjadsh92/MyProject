@@ -1,7 +1,15 @@
 import { auth } from "./auth"
-
+import { NextResponse } from "next/server";
 
 export default auth;
+
+
+export function middleware(request) {
+  // Add a new header x-current-path which passes the path to downstream components
+  const headers = new Headers(request.headers);
+  headers.set("x-current-path", request.nextUrl.pathname);
+  return NextResponse.next({ headers });
+}
 
 export const config = {
     matcher: [
